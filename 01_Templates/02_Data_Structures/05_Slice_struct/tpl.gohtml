@@ -1,0 +1,16 @@
+--------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Great Bands</title>
+</head>
+<body>
+<ul>
+    //labeling the index and element with the struct keys to return data
+    {{range .}}
+    <li>{{.Name}} - {{.Song}}</li>
+    {{end}}
+</ul>
+</body>
+</html>
