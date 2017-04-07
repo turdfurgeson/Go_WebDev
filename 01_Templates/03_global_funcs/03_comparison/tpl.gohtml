@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>predefined global functions</title>
+</head>
+<body>
+
+{{if gt .Hits .Albums}}
+Hits > Albums
+{{end}}
+
+{{if lt .Hits .Albums}}
+Hits < Albums
+{{end}}
+
+{{if eq .Hits .Albums}}
+Hits = Albums
+{{end}}
+
+{{if lt .Hits 10}}
+LAST ONE: Hits < 10
+{{end}}
+</body>
+</html>

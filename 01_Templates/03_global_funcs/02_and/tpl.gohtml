@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>functions</title>
+</head>
+<body>
+
+EXAMPLE 1 
+{{range .}}
+{{.}}
+{{end}}
+
+EXAMPLE 2 SLICE NOTATION
+{{if .}}
+    {{.}}
+{{end}}
+
+EXAMPLE 3 //ranges over and checks if they have name. Need closing tabs for 
+range and  if. 
+{{range .}}
+    {{if .Name}}
+        EXAMPLE 3 - {{.Name}}
+    {{end}}
+{{end}}
+
+EXAMPLE 4 //IF and AND 
+{{range .}}
+    {{if  and .Name .Awesome}}
+        EXAMPLE 4 - Band: {{.Name}}
+        EXAMPLE 4 - Awesome?: {{.Awesome}}
+    {{end}}
+{{end}}
+
+</body>
+</html>
+
