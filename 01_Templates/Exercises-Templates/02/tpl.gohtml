@@ -1,0 +1,25 @@
+/* 1. Create a data structure to pass to a template which 
+* contains information about California hotels including Name, Address, City, Zip, Region
+* region can be: Southern, Central, Northern
+* can hold an unlimited number of hotels */
+
+--------------------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>California Hotels</title>
+</head>
+<body>
+<ul>
+{{range .}}
+    {{.Region}} <br>
+    {{.Name}}
+    {{.Address}}
+    {{.City}}
+    {{.Zip}}
+{{end}}
+ 
+</ul>
+</body>
+</html>

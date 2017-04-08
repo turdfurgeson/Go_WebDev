@@ -1,0 +1,21 @@
+{{/* Create a data structure to pass to a template which 
+contains information about restaurant's menu including Breakfast, Lunch, and Dinner item */}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Menu</title>
+</head>
+<body>
+<ul>
+{{range .}}
+    {{.Time}}
+    {{range .Menu}}
+        {{.Course}} - {{.Price}}
+    {{end}}
+{{end}}
+ 
+</ul>
+</body>
+</html>
